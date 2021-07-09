@@ -1,0 +1,37 @@
+  
+{% extends "users/base.html" %}
+{% load crispy_forms_tags %}
+{% load static %}
+{% block content %}
+
+
+
+
+    <div class="content-section"  style="box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05), 0 6px 6px rgba(0, 0, 0, 0.05); padding-bottom: 5%; padding-top: 5%" align="center">
+        
+        <form method="POST" >
+            {% csrf_token %}
+
+            <img src="{% static 'blog/images/gigger.png'%}" width="100px" >
+            
+
+            <h1>Create your Account</h1>
+            
+            <fieldset class="form-group" style="width: 50%">
+
+                <legend class="">Be a Gigger Now!</legend>
+                {{ form|crispy }}
+            </fieldset>
+        
+            <div class="form-group">
+                <button class="button button1" type="submit">Sign Up</button>
+            </div>
+        </form>
+    
+        <div class="">
+            <legend class="text-muted">
+                Already a gigger? <a class="ml-2" href="{% url 'login' %}">Sign In</a>
+            </legend>
+        </div>
+    </div>
+{% endblock content %}

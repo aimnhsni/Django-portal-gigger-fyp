@@ -1,0 +1,60 @@
+  
+{% extends "blog/base.html" %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+
+
+
+   <a class=" float-right" style="margin-right: 20px; margin-top: 10px;" href="/myprofile"><span class="navbar-toggler-icon black" ><img src="https://img.icons8.com/windows/2x/delete-sign.png" width="100%"></span></a>
+        <div class="content-section" align="center" style=" box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05), 0 6px 6px rgba(0, 0, 0, 0.05); padding-bottom: 3%; padding-top: 5%; margin-top: 5%;  ">
+
+         
+
+              <div class="media" >
+                
+                <div class="media-body" >
+                  <img class=" rounded-circle account-img" src="{{ user.profile.image.url }} " style="box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3), 0 6px 6px rgba(0, 0, 0, 0.3);" >
+                  
+
+                  <h2 class="border-top pt-3 account-heading" style="padding-top: 30px">@{{ user.username }}</h2>
+                  <a class="text-secondary" href="mailto: {{ user.email }}">{{ user.email }}</a>
+                 
+                </div>
+
+              </div>
+
+
+        <form method="POST" enctype="multipart/form-data" >
+            {% csrf_token %}
+            
+            
+            <fieldset class="form-group" style="width: 50%">
+
+                <legend class="">Profile Info</legend>
+                {{ u_form|crispy }}
+                {{ p_form|crispy }}
+                {{ b_form|crispy }}
+
+
+
+                
+            </fieldset>
+        
+            <div class="form-group">
+                <button class=" button button1 " type="submit">Update</button>
+               
+
+            </div>
+        </form>
+
+         
+        </div>
+
+
+        
+
+
+        
+
+{% endblock content %}

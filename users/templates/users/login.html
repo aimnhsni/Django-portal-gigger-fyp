@@ -1,0 +1,33 @@
+  
+{% extends "users/base.html" %}
+{% load crispy_forms_tags %}
+{% load static %}
+{% block content %}
+
+    <div class="content-section "  style="  padding-top: 80px; padding-bottom: 80px; box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05), 0 6px 6px rgba(0, 0, 0, 0.05)" align="center">
+        <form method="POST">
+            {% csrf_token %}
+            
+            <h1>Sign In to<img src="{% static 'blog/images/gigger.png'%}" width="150px"></h1>
+            <fieldset class="form-group" style="width: 50%;">
+                <legend class="">Let's get working!</legend>
+                {{ form|crispy }}
+            </fieldset>
+            <div class="form-group">
+                <button class="button button1" type="submit">Sign In</button><br><br>
+                <a href="{% url 'password_reset' %}"><small>Forgot password?</small></a>
+            </div>
+        </form>
+        <div class="">
+            <legend class="text-muted">
+                Not a gigger yet🤔? <a class="ml-2" href="{% url 'register' %}">Sign Up Now</a>
+                
+            </legend>
+
+
+        </div>
+
+    </div>
+
+
+{% endblock content %}
