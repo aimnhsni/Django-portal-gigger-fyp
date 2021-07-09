@@ -1,0 +1,82 @@
+
+{% extends "blog/base.html" %}
+{% block content%}
+
+
+
+
+		<div class="small" style="   margin-top: 10%; margin-bottom: 5%" align="center" ><h3><img class="rounded-circle article-img" src="{{ user.profile.image.url }}">{{ user.username }}'s Post  </h3></div>
+
+
+
+
+
+		
+					{% for post in posts %}
+
+
+					    	{% if post.author == user  %}
+
+
+
+
+						     <div class="media content-section" style="  margin:auto; margin-bottom: 10px; box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05), 0 6px 6px rgba(0, 0, 0, 0.05); ">
+						     	<h5>📌</h5>
+					  <div class="media-body">
+
+							    
+
+							      
+							      <div class="dropdown dropleft float-right">
+									  <a class="" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="navbar-toggler-icon black" ><img src="https://static.thenounproject.com/png/2303702-200.png" width="100%"></span>
+									   
+									  </a>
+
+									  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+									  	<a class="dropdown-item" href="{% url 'post-update' post.id %}">edit</a>
+									    <a class="dropdown-item" href="{% url 'post-delete' post.id %}">delete</a>
+									    
+									   
+									  </div>
+									</div>
+
+							   
+
+							    <h4><a class="article-title"  href="">{{ post.title }}</a></h4>
+
+							    <p class="article-content">{{ post.description }}</p>
+							    <b class="mr-2 float-left" >💰RM{{ post.salary }}</b><br>
+							    <small  class="text-muted float-left" >📍{{ post.location}} </small> <br>
+							    <small  class="text-muted float-left" >📆posted on {{ post.date|date:"F d, Y"}} </small>
+
+
+							    	
+
+							     
+							  </div>
+
+		                 </div>
+
+
+
+						              {% else %}
+
+
+							   
+
+							    {% endif %}
+
+
+						{% endfor %}
+
+
+
+
+	
+
+
+
+
+
+
+{% endblock content%}

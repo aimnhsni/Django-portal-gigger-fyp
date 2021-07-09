@@ -1,0 +1,29 @@
+  
+{% extends "blog/base.html" %}
+{% block content %}
+    <div class="content-section"  style="box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05), 0 6px 6px rgba(0, 0, 0, 0.05);  margin-top: 5%" align="center">
+        
+        <form method="POST" >
+            {% csrf_token %}
+
+            <fieldset class="form-group" style="width: 50%">
+
+                <legend class=""><b>Delete Post⚠️⁉️</b></legend><br>
+                <h3>You sure wanna delete "{{ object.title}}", Job ID: {{ object.id}} ?</h3>
+            </fieldset>
+        
+            <div class="form-group">
+                <button class="button cancel" type="submit">Yes, Delete</button>
+                 <a class="button button1" onclick="goBack()">Cancel</a>
+
+            <script>
+                    function goBack() {
+                      window.history.back();
+                    }
+            </script>
+
+            </div>
+        </form>
+    
+    </div>
+{% endblock content %}

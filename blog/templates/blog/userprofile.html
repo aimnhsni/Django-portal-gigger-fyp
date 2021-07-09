@@ -1,0 +1,58 @@
+
+   
+  
+{% extends "blog/base.html" %}
+{% load crispy_forms_tags %}
+{% block content %}
+
+
+
+        <div class="content-section" align="center" style=" box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05), 0 6px 6px rgba(0, 0, 0, 0.05); padding-bottom: 3%; padding-top: 5%; margin-top: 5%; ">
+
+
+
+              <div class="media" >
+
+                
+                <div class="media-body" >
+
+                  <img class=" rounded-circle account-img" src="{{ user.profile.image.url }} " style="box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3), 0 6px 6px rgba(0, 0, 0, 0.3);" >
+
+
+
+                 
+
+                  <h2 class="border-top pt-3 account-heading" style="padding-top: 30px">@{{ user.username }}</h2>
+                  <a class="text-secondary" href="mailto: {{ user.email }}">{{ user.email }}</a>
+                  <br>
+                  <br>
+                  <p>{{ user.profile.bio }}</p>                  
+                  <br>
+
+                  <a class="button button1"  href="{% url 'user-profile' user.username%}" >My Post</a>
+                  
+                  <br>
+                 
+                  
+                 
+
+                </div>
+
+
+
+              </div>
+
+
+   
+
+         
+        </div>
+
+        
+
+
+
+       
+
+{% endblock content %}
+

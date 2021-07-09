@@ -1,0 +1,144 @@
+{% extends "blog/base.html" %}
+{% load static %}
+{% block content%}
+
+  
+
+<div style="margin-bottom: 5%; margin-top: 5%" align="center"><b style="font-size: 30px">Company with freelancing job offer 🤝💼</b> </div>
+<div class="card mb-3" align="center">
+  <img src="{% static 'blog/images/reviews.png'%}" width="60%" style="margin-left: 20%; margin-top: 20px;">
+  <div class="card-body">
+    <h5 class="card-title">Conversation Trends on company reviews</h5><span>
+    
+  </div>
+</div>
+<div class="card-deck">
+  <div class="card">
+    <img src="https://iie.smu.edu.sg/sites/iie.smu.edu.sg/files/2019-03/homage.jpg"  class="card-img-top" alt="...">
+    <div class="card-body">
+    <a class="link-job" href="https://www.glassdoor.com/Job/jobs.htm?sc.keyword=homage%20sdn%20bhd&locT=C&locId=2941757" target="blank"> <h5 class="card-title">Homage sdn bhd</h5></a>
+      <p class="card-text"></p>
+     <span><abbrv title="Positive">😄58%</abbrv></span>
+     <span><abbrv title="Neutral">😐18%</abbrv></span> 
+     <span ><abbrv title="Negative" >😡24%</abbrv></span>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+  <div class="card">
+    <img src="https://i.pinimg.com/280x280_RS/12/53/0f/12530f98d5cd08770dd5e6e54807cb47.jpg" style="width: 200px; height: 200px; margin-left: 20%;" class="card-img-top" alt="...">
+    <div class="card-body">
+      <a class="link-job" href="https://malaysia.indeed.com/cmp/Design-Pickle/jobs" target="blank"> <h5 class="card-title">Design Pickle</h5></a>
+      <p class="card-text"></p>
+     <span><abbrv title="Positive">😄69%</abbrv></span>
+     <span><abbrv title="Neutral">😐12%</abbrv></span> 
+     <span ><abbrv title="Negative" >😡19%</abbrv></span>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+
+  <div class="card">
+
+  	<img src="https://www.faa.org.my/sites/default/files/styles/article/public/default_images/art-watermark.jpg?itok=b1pphT13"  class="card-img-top" alt="...">
+    <div class="card-body">
+      <a class="link-job" href="https://www.glassdoor.com/Overview/Working-at-Finance-Accreditation-Agency-EI_IE1567945.11,39.htm" target="blank"> <h5 class="card-title">FAA</h5></a>
+      <p class="card-text"></p>
+     <span><abbrv title="Positive">😄60%</abbrv></span>
+     <span><abbrv title="Neutral">😐35%</abbrv></span> 
+     <span ><abbrv title="Negative" >😡5%</abbrv></span>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+</div>
+		
+<div class="card-deck">
+  <div class="card">
+    <img src="https://pbs.twimg.com/profile_images/1325693114300788736/q1VlbcA7.jpg" style="width: 200px; height: 200px; margin-left: 20%;margin-top: 10%;" class="card-img-top" alt="...">
+    <div class="card-body">
+      <a class="link-job" href="https://merekahq.typeform.com/to/gfheTUr5" target="blank"><h5 class="card-title">Biji-Biji Iniative</h5></a>
+      <p class="card-text"></p>
+     <span><abbrv title="Positive">😄64%</abbrv></span>
+     <span><abbrv title="Neutral">😐18%</abbrv></span> 
+     <span ><abbrv title="Negative" >😡18%</abbrv></span>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+  <div class="card">
+    <img src="https://media-exp1.licdn.com/dms/image/C4D0BAQEku5Wkzrj-OA/company-logo_200_200/0/1519897823819?e=2159024400&v=beta&t=QvCs8jOcj_0AtikqRl5DCbBfIsWbgjqvOkg6FSkjiLI" style="width: 200px; height: 200px; margin-left: 15%; margin-top: 10%;" class="card-img-top" alt="...">
+    <div class="card-body">
+      
+      <a class="link-job" href="https://www.glassdoor.com/Jobs/Startups-com-Jobs-E1367147.htm?filter.countryId=170" target="blank"><h5 class="card-title">Startups.com</h5></a>
+      <p class="card-text"></p>
+     <span><abbrv title="Positive">😄70%</abbrv></span>
+     <span><abbrv title="Neutral">😐15%</abbrv></span> 
+     <span ><abbrv title="Negative" >😡15%</abbrv></span>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+  <div class="card">
+    <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMHBhAUBxIVExUSERIaFxUVGBgRHxkXIB0XHRkYGRkbHSggHh8lHxkVITEiJSkuLi4uHR8zODMtQzQ5LjcBCgoKBQUFDgUFDisZExkrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrK//AABEIAMgAyAMBIgACEQEDEQH/xAAbAAEAAgMBAQAAAAAAAAAAAAAABgcCBAUDAf/EAEEQAAICAQIDBAUHCAsBAAAAAAABAgMEBREGEiEHIjFBExZRYXEUMlJUkZLSIyRTcoGTobEzNjdDVXSUorPBwxX/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8Ao0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPRUSku7Fv9jMCYaX2lahpWnwpw7K1CtbRTpqk9t9/Fx38wIn8nn9CX2M+OmUV3otfsZYWl9pWr6rqFdODKudlklGMVRV4/d8PF7na7T+Mp4ukRwFOu2+Ufzq6EIRS3/uo7Lb4v4AU+D6ZRTlJKPi30A+cr5d9nt7TEu3TdCojwnDSLor5ZlY8slS6dLe9KuEn5PlVfQpWyDrsamtmns0wMDJRbW6T6GJYfBkFLs01tySbSx9m0t134eYFeA+nwAZRg5vupv4dTp8N6LZxBrFVGH86b8fJLzkyeatxNi8D3PG4Qpqsuq7tmXZCNknYvncnMvBP+QFZyolBd+Ml8U0eRYNfa1nXz21pU5VW/WuyqvZ/7RxboGNqnD61LhSPJXzct9H6KfuX0fB9OiQFfGcIOfzE38FuYFmdkmW9P0LW7sdR9JTi1zg5RjPaS9J5MCt5Uyiu9Fr4pnmT/H7Vcu25LWq6MmpvvVyoqW6+6avapoVOja5VLSo8lWTjwtUPoNuW8V7uiAhQB74ePLMyYQoW8pySS97A8nFqO7XR+ZiXZxDo2Pk8J26ZgR3ytKojdKS2fPKS9JbGO3WT70lsUo1swPgAAGcIOySUFu2+iRiWrwDwnbo2jvUc3EtyLN9sXHjXOxt/pZxS329n7QPGEY9mnDvNPZ6ll191fV65Lq/19vsb8ys7rXdY5Wttye7b82SbVuH9W1fUbLtQws2dlknKUnj2+fku70XuOfk8K5+LRKeVg5UIRW7lKi2KS9rbjsgOMTPsp4d9YOKY+ljzV48XbNfS2+bFPw3b2+whhZeVbLgjs6qrx3KrK1GfPNpuMo0wXdi/OL3n/MDPUtG1nK42ln04VvOr4zgu6u7HZQi+99GMUaPbHoD0ziCN9cHCGZHn5X4xn054vbp5oivrRnfXcn99Z+Im3DmTPjbgrMw86crcjG/OaJTk5yaXdsjzPq1tPogKzLD4K/sy1z4Y/wDyQK+lFxk1Lo14osjs/wASzO7O9ahg1zsnL5PywhFzk+/B9Eur6bgVoDvepmo/4fmf6e38Jy8/T7dNyHXqNVlM0k3CyMq2k/DpJJgT7sUXLqedKpb2RwrOT7Vv/wBFdWSc5tz6tvq/edzgriGXDOv13QW8dnGyP0oPxX8iT8UcBPUZyy+Cl8qxrm5clXfnU31cHBd7o9+m3sArosjsqfpOH9chd/RfIZN+57T6/EjencB6jn5KhXhZEPbKyqdcV8ZSSRJ+IsqngvhOen6ZbG3JyHvlWQfMor9Emunh0YFaMs7sgjVLQtcWpOUaXiV+klDrJR/KbuK9pWBYvZn/AFR4h/yMP/QDqcJaDoepaolh2322xUpV0XKNKtkk2obrm8diFcfazdrXEdktSh6J1JVxq8eSEd9o/wAWcHGvljZEZ48nGUJKUWvFNPdMsTizFjxpwzXqWnRXp6V6PMhFdenzLdvet1v7vcBWpY/Y3ocsrUb8tVuxYde8ILxlbLdQ236dNpFeVVuyxKtNttJJdW2/BJFk8ZZs+DOHMLT9LslVa078mVcnF87SUI8y6+HP0A9eG9F1jTONY5uThWvnucrV3esJt868fY3sRjtK4b9WuKra61+Tn36/1X5fFHL9aM767k/vrfxE0yJy427NuebdmVpk1zN7ylLHluvjJpqDbArVgMANzv0caahRBKnLuikkklLwS8CPgCSevmpfXbvvHjl8ZZ+bjSry8u2cJraUXLdNe84IA+m1qGo26lapZ9krJKKScnv0XgjUAA2sDOs07IU8KcoTSa5ovZ7PxNUAZ2Tdk3Kb3bbbfvN/SddydG5v/lXTq5vHke25zQBJPXzUvrt33jj6nqVuq5Ts1GyVk2knKT3bS6I0wB9N3TNWv0q7m062dUvbF7GiAJBnca6hqFDhmZl04vycjguXM+piABt4mo24dFsMWyUI2x5ZpPZSXsf2s1AB9NzB1S7T4WLCslBWLaai9uZex/xNIAelNsqLoypbUoyUk15NdUz0zcyzPyZTzJuc5eMpPds1wANvA1G3TnN4Vkoc8HGXK9t4vxT+xGoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP//Z" class="card-img-top" style="width: 200px; height: 200px; margin-left: 15%; margin-top: 10%;" alt="...">
+    <div class="card-body">
+      <a class="link-job" href="https://my.mncjobz.com/jobs/photo-retoucher-freelance-kuala-lumpur-15942?utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic" target="blank"><h5 class="card-title">ZALORA</h5></a>
+      <p class="card-text"></p>
+     <span><abbrv title="Positive">😄62%</abbrv></span>
+     <span><abbrv title="Neutral">😐19%</abbrv></span> 
+     <span ><abbrv title="Negative" >😡19%</abbrv></span>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+</div>
+	
+<div class="card-deck">
+  <div class="card">
+    <img src="https://www.postmagazine.com/images/cmssys/thumbnails/2021/Iyuno580-580345-13-TransparentWhite-1.jpg" style="" class="card-img-top" alt="...">
+    <div class="card-body">
+      <a class="link-job" href="https://www.glassdoor.com/Jobs/Iyuno-SDI-Group-Jobs-E725086.htm?filter.countryId=170" target="blank"><h5 class="card-title">Iyuno-SDI Group</h5></a>
+      <p class="card-text"></p>
+     <span><abbrv title="Positive">😄60%</abbrv></span>
+     <span><abbrv title="Neutral">😐15%</abbrv></span> 
+     <span ><abbrv title="Negative" >😡25%</abbrv></span>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+  <div class="card">
+    <img src="https://www.most2414.com/wp-content/uploads/2019/11/Shopee_Myads_MOST2414_01.jpeg" style="width: 200px; height: 200px; margin-left: 17%; margin-top: 10%;" class="card-img-top" alt="...">
+    <div class="card-body">
+      
+      <a class="link-job" href="https://www.glassdoor.sg/Jobs/Shopee-Jobs-E1263091.htm?filter.countryId=217" target="blank"><h5 class="card-title">Shopee</h5></a>
+      <p class="card-text"></p>
+
+
+ 
+
+     <span><abbrv title="Positive">😄54%</abbrv></span>
+     <span><abbrv title="Neutral">😐25%</abbrv></span> 
+     <span ><abbrv title="Negative" >😡21%</abbrv></span>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAMAAACahl6sAAAAn1BMVEX///8KVogaoNt/qcP4+vy/1OGZus+sx9ghZpOIrcXT4epBsOHu9PdnwOfn7/OOs8pgkbE7eKDf6e8aYZCw3vMRW4vA5fU6reCN0O3w+f3U7fju8/ctqN7m9ftPtuMWXo7c8PktbpnK2uV3xuqFzOxKgqdYjK6j2fC44fRkv+fo9vtznrufvdA0c5w/pdbA3++Qw99rmberz+NDfqScxNqtLjGYAAAE40lEQVR4nO3YCXPyNhAGYBsLMJiY+zQQc0MIX5um//+3dSVbtmRLYFI6nU7fZyYzHAG0lna1luMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD8e1Zx+bV5vFgs4nnhVTboWL6DDUL5MBww8/902rZPv8Zkujzpr8zPu2BZq9WWwe6sxtLp+cfQMWFXvz9IHrb7vmeMpHMcHi0hPjKfjMhv23Zm28y05X+91WqB9qlRUMutR/mPt4eu2zX+Uv3ddT+Th13X9Y3R0hvyf541E0PxVN+utBmYA4kvNd0llm+FG+VjKnZw3XE9edyyBBL6/EejHwWyKwfi+TKQ960xkImYjuVldp6cZxe+wGrBQr5Jg3Q9ww81aUJ67H4gnvjVxo8CiXdv5PemqtVLNeSS0QJZTHkYezn0eL9UIwlvxilhNM9DeV0sgQySK7gx59hLqIF8rPm4J8q7YobWH+mzBo3lWvqG5th1v+R1sQTyRZ/s01/riZHNBWbTSWQ5rAay56Nead8W89j26ZOIxuK3HV2HXhxmL5oD4XWiP9jYCoHRLCDrbsOi+90XerKoK4EsaCFN48L38dW2lIvrky7+tVBEG2M1c8yB9GgymqJwmXLMiIkE/eVZ3ezJzqvDqPSNI3p1lz7uqOmQ4LXMzxPHGMiWqsGBORH99tBU9ox2UxK0ujbHjXCQv5YH8kHXfl3czenS0OKayvWm5YMcubryjYHI8vxpzDELtiLxKupYhAMhaxfyQCZ06U+GbzzR67IA8C1DmxK+8NVaZAqkTtGLXZ09NSVPygOZKcmgimm1zuQTvmeorca1sDsYAuHleZwELya00rAWM+6Pul2zJTTLgVCKBOWVRWUwyJPEYUfKr3r2Xpv2h746cEMgfPTpfsmowr0Xy54JCx6kuuddxyLZs4KZB3IpdF0ZSpJL9qSeJG7qq9hBlQNhanlWgnpRIP5PA2G9vLFytrQ/HLTuvBwIL895hh+yZXZf5aWVrY4nl5Y2eL7Oxk3tn0uBRHp5zhL/5R4n+0JN9nRKktHXh+oyE0qBFDtNit2tO5WwBReHZoPk1iRrqJ8rvxxP8G8+JWr7bgskLJRnZzsuBW+zW5JfXsvsMBSqb4hzdUMUKMPHPMPV9t0WCG/fu3QrLCVToi9HCza9m/Cb+y2KMiVsJQaptigJUXMjU79SCoS377coStsJcmVtCv+70pSc7rWND5vGLEtWl+meFZrGlCd2wc9Su1IOJCnPTTcXph1kFXcb+YdtfJw+OVMAE72Nl8R1bpt6+kIgvH2ndOKFTt5id8SLt9cXLuuNFc/9i35jpQ7X7Y9NTbkeiLz4dZmhXR759YlziDO/y337s1nkVb/VZW/8sXbTngmTTPPLDaAWiKE8c4OhmJkqbAl/zebYcviwyA8fRsnhhSmOZEqMN65aIMdyeRa8yucQ/B7CFMjt7xwHqfg5hHszdORqINZdnJ8NVZyS1VkczrV1ygFdNob7B3SFHSTXsFxU9YCuq0y8jk/oq+9LJtNp8ch0slsvl/zINDDe+wrR0T+ajtvUI1Pr8akTHfwqPfBzVoZrnh5i841lbflYx3KirR5iWw+0ncj6zj9jX9zU/6vmp1NpDwEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA+N/7C8QcY3FTXTjTAAAAAElFTkSuQmCC" class="card-img-top" style="width: 200px; height: 200px; margin-left: 15%; margin-top: 10%;" alt="...">
+    <div class="card-body">
+      <a class="link-job" href="https://www.glassdoor.sg/Jobs/IQVIA-Jobs-E8347.htm?filter.countryId=170" target="blank"><h5 class="card-title">IQVIA</h5></a>
+      <p class="card-text"></p>
+
+     <span><abbrv title="Positive">😄66%</abbrv></span>
+     <span><abbrv title="Neutral">😐11%</abbrv></span> 
+     <span ><abbrv title="Negative" >😡23%</abbrv></span>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+</div>
+
+
+
+					 
+
+
+
+
+
+
+	
+   
+{% endblock content%}

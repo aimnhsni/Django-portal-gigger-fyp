@@ -1,0 +1,528 @@
+{% extends "blog/base.html" %}
+{% load static %}
+{% block content%}
+
+  
+
+
+        
+        <div style="margin-bottom: 10%; margin-top: 5%" align="center"><b style="font-size: 30px">Analytic Board 📊</b> <br><br><div class="btn-group" align="center"></div>
+
+
+
+
+
+
+
+
+  
+					<div class="card" style="margin-bottom: 5%; text-align: center;" >
+
+
+					  <div class="card-body">
+					     <div class="media-body" >
+									    <div class="article-metadata">
+									    	<h3>Gig Economy Sentiment</h3>
+
+									     </div>
+
+									     <script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+									     <div id="chartContainer2" style="width: 100%; height: 300px;display: inline-block;"></div>
+
+
+									     <script type="text/javascript">
+
+									     	var chart = new CanvasJS.Chart("chartContainer2",
+					                           {
+											        animationEnabled: true,
+
+											        data: [
+											        {
+											            type: "doughnut",
+											            innerRadius: "50%",
+											            showInLegend: true,
+											            dataPoints: [
+													                { y: 54,label:"Positive %", legendText: "Positive", indexLabel: "Positive, 54%" , color: "#64C2A6", },
+													                { y: 33, label:"Neutral %",legendText: "Neutral", indexLabel: "Neutral, 33%", color: "#2D87BB", },
+													                { y: 13, label:"Negative %",legendText: "Negative", indexLabel: "Negative, 13%", color: "#F66D44", },
+													                ]
+
+											        },
+											              ]
+
+											    });
+
+											chart.render();
+									     	
+									     </script>
+
+									      
+						</div>
+					  </div>
+					</div>
+
+
+
+		
+
+			<div class="row"  >
+
+
+
+
+				<div class="col-sm-6" style="margin-bottom: 5%; text-align: center;">
+					    <div class="card" >
+					      <div class="card-body">
+
+					      	<div class="media-body" >
+
+					      	     <div class="article-metadata" align="center" style="margin-bottom: 10px;">
+
+										  <h5>Conversation Trends on Gig Economy</h5>
+
+								 </div>
+
+
+					      		<img src="{% static 'blog/images/gg.png'%}" width="70%">
+							
+
+										      
+							    </div>
+
+
+					       
+					      </div>
+					    </div>
+					  </div>
+
+
+					  <div class="col-sm-6" style="margin-bottom: 5%; text-align: center;">
+					    <div class="card" >
+					      <div class="card-body">
+
+					      	<div class="media-body" >
+
+					             <div class="article-metadata" align="center" style="margin-bottom: 10px;">
+
+										  <h5>Conversation Trends on Gig Jobs</h5>
+
+								 </div>
+
+								
+								<img src="{% static 'blog/images/keje.png'%}" width="70%">
+
+										      
+							    </div>
+
+
+					       
+					      </div>
+					    </div>
+					  </div>
+
+
+
+
+
+
+
+
+
+					  <div class="col-sm-6" style="margin-bottom: 5%; text-align: center;">
+					    <div class="card" >
+					      <div class="card-body">
+
+					      	<div class="media-body" >
+										    <div class="article-metadata">
+										    	<h5>Cities with the most freelancing offer</h5>
+
+										     </div>
+
+										     <script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+										     <div id="chartContainer4" style="width: 100%; height: 300px;display: inline-block;"></div>
+
+
+										     <script type="text/javascript">
+
+										     	var chart = new CanvasJS.Chart("chartContainer4",
+						                           {
+												        animationEnabled: true,
+
+												        data: [
+												        {
+												            type: "pie",
+												            innerRadius: "50%",
+												            showInLegend: true,
+												            dataPoints: [
+														                { y: 29.23,label:"Kuala Lumpur %", legendText: "Kuala Lumpur", indexLabel: "Kuala Lumpur, 29.23%" , color: "#D1F2EB", },
+														                { y: 25.52, label:"Selangor %",legendText: "Selangor", indexLabel: "Selangor, 25.52%", color: "#007CC7", },
+
+														                { y: 5.57, label:"Petaling Jaya %",legendText: "Petaling Jaya", indexLabel: "Petaling Jaya, 5.57%", color: "#F6DDCC", },
+
+														                { y: 5.10, label:"Remote %",legendText: "Remote", indexLabel: "Remote, 5.10%", color: "#ff4d4d", },
+
+														                { y: 2.55, label:"Puchong %",legendText: "Puchong", indexLabel: "Puchong, 2.55%", color: "#DAF7A6", },
+
+														                { y: 4.87, label:"Johor %",legendText: "Johor", indexLabel: "Johor, 4.87%", color: "#7FB3D5", },
+
+														                { y: 27.16, label:"Others %",legendText: "Others", indexLabel: "Others, 27.16%", color: "#F4D03F ", },
+
+														                ]
+
+												        },
+												              ]
+
+												    });
+
+												chart.render();
+										     	
+										     </script>
+
+										      
+							    </div>
+
+
+					       
+					      </div>
+					    </div>
+					  </div>
+
+
+
+					  <div class="col-sm-6" style="margin-bottom: 5%; text-align: center;">
+					    <div class="card" >
+					      <div class="card-body">
+
+					      	<div class="media-body" >
+										    <div class="article-metadata">
+										    	<h5>Company that hire freelancer the most</h5>
+
+										     </div>
+
+										     <script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+										     <div id="chartContainer1" style="width: 100%; height: 300px;display: inline-block;"></div>
+
+
+										     <script type="text/javascript">
+
+										     	var chart = new CanvasJS.Chart("chartContainer1",
+						                           {
+												        animationEnabled: true,
+
+												        data: [
+												        {
+												            type: "doughnut",
+												            innerRadius: "70%",
+												            showInLegend: true,
+												            dataPoints: [
+														                { y: 10.31,label:"Hire Digital %", legendText: "Hire Digital", indexLabel: "Hire Digital, 10.31%" , color: "#003f5c", },
+														                { y: 8.25, label:"Startups %",legendText: "Startups", indexLabel: "Startups, 8.25%", color: "#58508d", },
+
+														                { y: 6.18, label:"Homage Sdn Bhd %",legendText: "Homage Sdn Bhd", indexLabel: "Homage Sdn Bhd, 6.18%", color: "#bc5090", },
+
+														                { y: 3.09, label:"Design Pickle %",legendText: "Design Pickle", indexLabel: "Design Pickle, 3.09%", color: "#ff6361", },
+
+														                { y: 6.19, label:"Ricebowl %",legendText: "Ricebowl", indexLabel: "Ricebowl, 6.19%", color: "#ffa600", },
+
+														                { y: 4.12, label:"Biji-Biji Iniative %",legendText: "Biji-Biji Iniative", indexLabel: "Biji-Biji Iniative, 4.12%", color: "#ff7c43", },
+
+														                { y: 4.12, label:"NANOS %",legendText: "NANOS", indexLabel: "NANOS, 4.12%", color: "#2D87BB", },
+														                { y: 4.12, label:"CG Wealth Management %",legendText: "CG Wealth Management", indexLabel: "CG Wealth Management, 4.12%", color: "pink", },
+
+														                ]
+
+												        },
+												              ]
+
+												    });
+
+												chart.render();
+										     	
+										     </script>
+
+										      
+							    </div>
+
+
+					       
+					      </div>
+					    </div>
+					  </div>
+
+
+
+
+					  <div class="col-sm-6" style="margin-bottom: 5%; text-align: center;" >
+					    <div class="card" >
+					      <div class="card-body">
+					       <div class="media-body">
+									    <div class="article-metadata">
+									    	<h5>Highest paying cities in Malaysia for Freelancers-Top 5</h5>
+									     </div>
+
+									    <script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+										<div id="chartContainer3" style="width: 100%; height: 300px;display: inline-block;"></div>
+										
+
+									     <script type="text/javascript">
+									     	
+
+
+											var chart = new CanvasJS.Chart("chartContainer3",
+											    {
+											        animationEnabled: true,
+
+											        axisX: {
+											            valueFormatString: "MMM",
+											            interval: 1,
+											            intervalType: "cities"
+											        },
+											        axisY: {
+											          
+											            title: "RM"
+											        },
+											        data: [
+											        {
+											          type: "line",
+											          dataPoints: [
+
+
+
+					                            
+												{ y: 4401,  label: "Kuala Lumpur" },
+												{ y: 5000, label: "Puchong", indexLabel: "highest", markerColor: "red", markerType: "triangle" },
+												{ y: 3000, label: "Seremban", indexLabel: "lowest", markerColor: "DarkSlateGrey", markerType: "cross"  },
+												{ y: 3064,  label: "Petaling Jaya" },
+												{ y: 3904,  label: "George Town" }
+						
+											            ]
+											        }
+											        ]
+											    });
+											chart.render();
+
+											
+									     </script>
+
+					              </div>
+					      </div>
+					    </div>
+					  </div>
+
+
+
+					  <div class="col-sm-6" style="margin-bottom: 5%; text-align: center;" >
+					    <div class="card" >
+					      <div class="card-body">
+					       <div class="media-body">
+									    <div class="article-metadata">
+									    	<h5>Freelance Job Type</h5>
+									     </div>
+
+									    <script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+										<div id="chartContainer5" style="width: 100%; height: 300px;display: inline-block; "></div>
+										
+
+										     <script>
+
+													var chart = new CanvasJS.Chart("chartContainer5",
+											    {
+											        animationEnabled: true,
+											        title: {
+											            text: "Percentage %"
+											        },
+											        axisX: {
+											            interval: 10,
+											        },
+
+											        axisY:{
+
+											        	suffix: "%"
+
+											        },
+
+											        data: [
+											        {
+											            type: "column",
+											            legendMarkerType: "triangle",
+											            legendMarkerColor: "green",
+											            color: "rgba(255,12,32,.3)",
+											            
+											            showInLegend: true,
+											            legendText: "Job Type",
+											            dataPoints: [
+											                { x: 10, y: 34.42, label: "Creative Jobs", color: "#ff4d4d", },
+											                { x: 20, y: 32.18, label: "Technical", color:"#3CB371" },
+											                { x: 30, y: 24.85, label: "Administrative" ,color:"#48D1CC"},
+											                { x: 40, y: 5.70, label: "Education", color:"#FFB6C1" },
+											                { x: 50, y: 2.85, label: "Health/Fitness", color:"#D8BFD8" }
+											               
+											            ]
+											        },
+											        ]
+											    });
+											chart.render();
+												</script>
+
+					              </div>
+					      </div>
+					    </div>
+					  </div>
+
+
+
+
+
+										<script>
+												window.onload = function () {
+
+												var chart = new CanvasJS.Chart("chartContainer6", {
+													theme:"light2",
+													animationEnabled: true,
+													title:{
+														text: "Freelance Job Type in Top Cities"
+													},
+													axisY :{
+														title: "Total Job Type",
+														suffix: ""
+													},
+													toolTip: {
+														shared: "true"
+													},
+													legend:{
+														cursor:"pointer",
+														itemclick : toggleDataSeries
+													},
+													data: [{
+														type: "spline",
+														visible: false,
+														showInLegend: true,
+														
+														name: "Administrative",
+														dataPoints: [
+														    { label: "Johor", y: 8},
+															{ label: "Selangor", y: 34},
+															{ label: "Petaling Jaya", y: 3},
+															{ label: "Remote", y: 10 },
+															{ label: "Puchong", y: 2},
+															{ label: "Kuala Lumpur", y: 47 }
+													
+														]
+													},
+													{
+														type: "spline", 
+														showInLegend: true,
+														visible: false,
+														name: "Education",
+														dataPoints: [
+														    { label: "Johor", y: 4},
+															
+															{ label: "Selangor", y: 12 },
+															{ label: "Petaling Jaya", y: 1 },
+															{ label: "Remote", y: 3 },
+															{ label: "Puchong", y: 0},
+															{ label: "Kuala Lumpur", y: 3 }
+														
+														]
+													},
+													{
+														type: "spline",
+														visible: false,
+														showInLegend: true,
+														name: "Creative Job",
+														dataPoints: [
+														    { label: "Johor", y: 2 },
+															{ label: "Selangor", y: 40 },
+															{ label: "Petaling Jaya", y: 17 },
+															{ label: "Remote", y: 19 },
+															{ label: "Puchong", y: 6},
+															{ label: "Kuala Lumpur", y: 52 },
+														
+														]
+													},
+													{
+														type: "spline",
+												      	visible: false,
+														showInLegend: true,
+														name: "Health/Fitness",
+														dataPoints: [
+														    { label: "Johor", y: 2 },
+															{ label: "Selangor", y: 3 },
+															{ label: "Petaling Jaya", y: 1},
+															{ label: "Remote", y: 0 },
+															{ label: "Puchong", y: 0 },
+															{ label: "Kuala Lumpur", y: 5},
+													
+														
+														]
+													},
+													{
+														type: "spline", 
+														showInLegend: true,
+														name: "Technical",
+														dataPoints: [
+															{ label: "Johor", y: 6 },
+															{ label: "Selangor", y: 43 },
+															{ label: "Petaling Jaya", y: 10},
+															{ label: "Remote", y: 16},
+															{ label: "Puchong", y: 6 },	
+															{ label: "Kuala Lumpur", y: 40 },
+														
+														]
+													},
+											
+												]
+												});
+												chart.render();
+
+												function toggleDataSeries(e) {
+													if (typeof(e.dataSeries.visible) === "undefined" || e.dataSeries.visible ){
+														e.dataSeries.visible = false;
+													} else {
+														e.dataSeries.visible = true;
+													}
+													chart.render();
+												}
+
+												}
+						</script>
+						</head>
+						<body>
+						<div id="chartContainer6" style="height: 370px; width: 100%;     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05), 0 6px 6px rgba(0, 0, 0, 0.05);"></div>
+						<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+
+
+
+
+
+
+
+
+
+			<iframe src="https://data.worldbank.org/share/widget?indicators=SL.EMP.SELF.ZS&locations=MY" width='1500' height='800' frameBorder='0' scrolling="no" style="margin-top: 10%;"></iframe><br>
+
+
+
+					 
+
+
+					  <iframe width="1500" height="800" src="https://app.powerbi.com/view?r=eyJrIjoiMzM0OWYwMjctODQwNC00NzlmLWE0NzctMTA4YzAzMjE4MTBlIiwidCI6IjdhODU3ZTA5LWQ5YWQtNDNkMi04OTNlLTMyMTVkZGRkM2EzYiIsImMiOjEwfQ%3D%3D" frameborder="0" allowFullScreen="true"></iframe><br>
+
+
+
+
+			 <iframe width="1500" height="800" src="https://app.powerbi.com/view?r=eyJrIjoiNDk1ZDM5MWQtYTRkNC00OGNiLTk1YTYtZTRmN2U5Yzc2NWNlIiwidCI6IjdhODU3ZTA5LWQ5YWQtNDNkMi04OTNlLTMyMTVkZGRkM2EzYiIsImMiOjEwfQ%3D%3D" frameborder="0" allowFullScreen="true"></iframe>
+
+
+
+
+
+         </div>
+
+
+
+
+
+	
+   
+{% endblock content%}

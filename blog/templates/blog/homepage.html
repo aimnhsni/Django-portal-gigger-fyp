@@ -1,0 +1,1003 @@
+  
+{% if user.is_authenticated %}
+
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Welcome to Gigger!</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" type="text/css" href="{% static 'blog/main.css'%}">
+        <link rel = "icon" type = "image/png" href = "https://files.softicons.com/download/game-icons/classic-games-icons-by-thvg/ico/Pacman%202.ico">
+
+
+    <style >
+
+
+      body{
+        background-color: white;
+      }
+
+
+.button {
+  background-color:  #4DA8DA; /* Green */
+  border: none;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 10PX;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 13px;
+  transition-duration: 0.4s;
+  cursor: default;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-decoration: none;
+  
+
+
+}
+a:hover { text-decoration : none;
+  color: white;
+}
+
+.button1 {
+  background-color: #4DA8DA; 
+  color: white; 
+  text-decoration: none;
+  border-radius: 50px;
+
+}
+
+.buttonPost {
+  background-color: #f75990; 
+  color: white; 
+  text-decoration: none;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.1)
+  
+
+}
+
+.buttonPost:hover {
+  box-shadow: inset 6px 6px 10px 0 rgba(0, 0, 0, 0.2),
+    inset -6px -6px 10px 0 rgba(0, 0, 0, 0.1);
+  
+
+}
+.buttonPost:active {
+ 
+  transform: translateY(4px);
+  
+
+}
+
+.Browse {
+  background-color:  #4DA8DA; 
+  color: white; 
+  text-decoration: none;
+  
+
+}
+
+.cancel {
+  background-color: red; 
+  color: white; 
+  text-decoration: none;
+  border-radius: 50px;
+  
+}
+
+.card{
+
+      border-color: transparent;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05), 0 6px 6px rgba(0, 0, 0, 0.05);"
+}
+
+
+ 
+
+.site-header .navbar-nav .nav-link:hover {
+  color: #F1B24A;
+}
+
+  .dropdown-menu{
+
+
+    border-color: transparent;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05), 0 6px 6px rgba(0, 0, 0, 0.05);"
+
+
+  }
+
+
+
+
+.bg-1 {
+      
+      background-image: url({% static 'blog/images/hello.gif'%});
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+      background-position: center center; 
+      height: 700px;
+
+    
+
+
+    }
+
+
+.bg-2 {
+      background-color: #ffffff; /* Dark Blue */
+      
+
+
+    }
+.bg-3 {
+
+
+  background-color: white; /* White */
+  color: #ffffff;
+}
+
+
+
+.container-fluid {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+p{
+  color: black;
+}
+
+
+  .bg-4 {
+    background-color: #2f2f2f;
+    color: black;
+}
+footer .glyphicon {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #f4511e;
+}
+
+.gambar{
+
+
+  background-image: url(https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?ixid=MnwxMjA3fDF8MHxzZWFyY2h8ODh8fHdvcmt8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);
+  background-repeat: no-repeat;
+  height: 500px;
+  background-size: cover;
+  background-position: center center; 
+  
+
+
+
+}
+
+.hero-text {
+
+  
+  text-align: center;
+  align-self: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  font-size: 50px;
+  
+  
+    }
+
+    * { color:white; text-decoration: none;}
+
+
+    .white{
+      color: #fff;
+    }
+
+
+}
+
+.container-fluid {
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+}
+#myPageContent, section { 
+  height:100% !important; 
+  width:100% !important;
+}
+
+
+/* Slider */
+#textSlider.row {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80% !important;
+}
+#textSlider div {
+  color: #FFF;
+  font-family: 'Lato', sans-serif;
+  text-transform: uppercase;
+}
+
+.iamCol {
+  text-align: right;
+  float: left;
+  font-weight: 300;
+  font-size:30pt;
+}
+.iamCol p:nth-child(2) { margin-top: -20pt !important; }
+.slideCol {
+  text-align: left;
+  overflow: hidden;
+  font-weight: 750;
+  font-size:45pt;
+  display: block;
+  white-space: nowrap;
+}
+.slideCol p { margin: 0 15px !important; }
+
+.inner p{
+
+  color: white;
+
+
+}
+
+.scroller {
+   height: 70pt;
+   line-height: 70pt;
+   overflow: hidden;
+}
+
+
+
+@keyframes opacity {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.scroller .inner { animation: 10s normal infinite running scroll; }
+@keyframes scroll {
+   0%   {margin-top: 0px;}
+   15%  {margin-top: 0px;}
+
+   25%  {margin-top: -70pt;}
+   40%  {margin-top: -70pt;}
+   
+   50%  {margin-top: -140pt;}
+   65%  {margin-top: -140pt;}
+
+   75%  {margin-top: -210pt;}
+   90%  {margin-top: -210pt;}
+
+   100% {margin-top: 0px;}
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+
+.label-container{
+  position:fixed;
+  bottom:48px;
+  right:105px;
+  display:table;
+  visibility: hidden;
+}
+
+.label-text{
+  color:#FFF;
+  background:rgba(51,51,51,0.5);
+  display:table-cell;
+  vertical-align:middle;
+  padding:10px;
+  border-radius:3px;
+}
+
+.label-arrow{
+  display:table-cell;
+  vertical-align:middle;
+  color:#333;
+  opacity:0.5;
+}
+.child{
+  background-color:#f75990; 
+}
+
+.float{
+  position:fixed;
+  width:60px;
+  height:60px;
+  bottom:40px;
+  right:20px;
+  background-color:#f75990;
+  color:#FFF;
+  border-radius:50px;
+  text-align:center;
+  box-shadow: 2px 2px 3px #999;
+  z-index:1000;
+  animation: bot-to-top 2s ease-out;
+  color: white;
+
+}
+
+ul{
+  position:fixed;
+  right:40px;
+  padding-bottom:20px;
+  bottom:80px;
+  z-index:100;
+}
+
+ul li{
+  list-style:none;
+  margin-bottom:10px;
+}
+
+ul li a{
+  background-color:#F33;
+  color:#FFF;
+  border-radius:50px;
+  text-align:center;
+  box-shadow: 2px 2px 3px #999;
+  width:60px;
+  height:60px;
+  display:block;
+}
+
+ul:hover{
+  visibility:visible!important;
+  opacity:1!important;
+}
+
+
+.my-float{
+  font-size:24px;
+  margin-top:18px;
+  color: white;
+
+}
+
+
+a#menu-share + ul{
+  visibility: hidden;
+}
+
+a#menu-share:hover + ul{
+  visibility: visible;
+  animation: scale-in 0.5s;
+}
+
+a#menu-share i{
+  animation: rotate-in 0.5s;
+}
+
+a#menu-share:hover > i{
+  animation: rotate-out 0.5s;
+}
+
+@keyframes bot-to-top {
+    0%   {bottom:-40px}
+    50%  {bottom:40px}
+}
+
+@keyframes scale-in {
+    from {transform: scale(0);opacity: 0;}
+    to {transform: scale(1);opacity: 1;}
+}
+
+@keyframes rotate-in {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+
+@keyframes rotate-out {
+    from {transform: rotate(360deg);}
+    to {transform: rotate(0deg);}
+}
+
+
+
+
+  </style>
+  <script type="text/javascript">
+     var TxtType = function(el, toRotate, period) {
+        this.toRotate = toRotate;
+        this.el = el;
+        this.loopNum = 0;
+        this.period = parseInt(period, 10) || 2000;
+        this.txt = '';
+        this.tick();
+        this.isDeleting = false;
+    };
+
+    TxtType.prototype.tick = function() {
+        var i = this.loopNum % this.toRotate.length;
+        var fullTxt = this.toRotate[i];
+
+        if (this.isDeleting) {
+        this.txt = fullTxt.substring(0, this.txt.length - 1);
+        } else {
+        this.txt = fullTxt.substring(0, this.txt.length + 1);
+        }
+
+        this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+        var that = this;
+        var delta = 200 - Math.random() * 100;
+
+        if (this.isDeleting) { delta /= 2; }
+
+        if (!this.isDeleting && this.txt === fullTxt) {
+        delta = this.period;
+        this.isDeleting = true;
+        } else if (this.isDeleting && this.txt === '') {
+        this.isDeleting = false;
+        this.loopNum++;
+        delta = 500;
+        }
+
+        setTimeout(function() {
+        that.tick();
+        }, delta);
+    };
+
+
+    window.onload = function() {
+        var elements = document.getElementsByClassName('typewrite');
+        for (var i=0; i<elements.length; i++) {
+            var toRotate = elements[i].getAttribute('data-type');
+            var period = elements[i].getAttribute('data-period');
+            if (toRotate) {
+              new TxtType(elements[i], JSON.parse(toRotate), period);
+            }
+        }
+        // INJECT CSS
+        var css = document.createElement("style");
+        css.type = "text/css";
+        css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #000}";
+        document.body.appendChild(css);
+    };
+   </script>
+</head>
+<body id="myPage">
+
+      <header class="site-header">
+      <nav class="navbar navbar-expand-md  bg-steel  " style=" width: 100%;  top: 0; box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05), 0 6px 6px rgba(0, 0, 0, 0.03); text-align: center; "  >
+        
+      <div class="container">
+
+
+        <a href="/home"><img src="{% static 'blog/images/gigger.png'%}" width="100px"></a>
+        <a class="button buttonPost d-none d-md-block" href="{% url 'post-create' %}" >Post a Job</a>
+        
+
+       
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation" >
+        <span class="navbar-toggler-icon black" ><img src="https://image.flaticon.com/icons/png/128/812/812847.png" width="100%"></span>
+        
+
+        </button>
+
+
+
+        <div class="collapse navbar-collapse" id="navbarToggle">
+          <div class="navbar-nav mr-auto">
+
+
+
+            
+          </div>
+
+          
+          
+          
+          <!-- Navbar Right Side -->
+          <div class="navbar-nav">
+
+            
+            <a class="nav-item nav-link" href="/home">Home</a>
+            <a class="nav-item nav-link" href="/job">Browse Jobs</a>  
+
+            <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Dashboard
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="text-align: center;" >
+                    <a class="nav-item nav-link" href="/dashboard">Analytic Board📊</a>  
+                    <a class="nav-item nav-link" href="/company"  >Company💼</a>  
+                  </div>
+            </li>
+            
+
+            <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    More
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown"style="text-align: center;"  >
+                    <a class="nav-item nav-link" href="/myproject">My Posted Jobs</a>  
+                    <a class="nav-item nav-link" href="{% url 'profile' %}"  >My Profile</a>
+                    <a class="nav-item nav-link" href="{% url 'logout' %}">Logout<span class="navbar-toggler-icon black" ><img src="https://cdn0.iconfinder.com/data/icons/public-area-1/32/-_exit-256.png" style="padding-bottom: 10px" width="100%"></span></a>
+                     
+                  </div>
+            </li>
+
+
+
+
+            
+
+          </div>
+          
+
+
+        </div>
+       
+      </div>
+      </nav>
+      </header>
+
+
+
+<div class="container-fluid bg-1" >
+
+
+
+<h1  style="color: white; font-size: 50px; margin-left: 15%; margin-top: 15%; ">Powering Gig Economy in Malaysia.</h1>
+
+<h4 style="color: white;  margin-left: 15%;  ">Browse any job that suit your freelance talent/experiences.</h4><br>
+<a class="button Browse" style="margin-left: 15%; "  href="/job" >Get Me a Job ⋙</a><br><br>
+
+<div class="type d-none d-md-block">
+
+  <div class=" slideCol" style="margin-left: 14%;">
+            <div class="scroller">
+              <div class="inner">
+                <p>Freelancer.</p>
+                <p>Designer.</p>
+                <p>Programmer.</p>
+                <p>Digital Marketer.</p>
+                
+              </div>
+            </div>
+          </div>
+
+  <b class="hero-text ">
+  <a href="" class="typewrite " style=" margin-left: 15%; " data-period="2000"  data-type='[ "Designer.","Web Developer.","Digital Marketer.","Freelancer.","Videographer.", "Programmer." ]'>
+   <span class="wrap"></span>
+  </a>
+       </b> 
+
+     </div>
+
+
+
+     
+
+
+       
+
+ </div>
+
+
+
+<div class="container-fluid bg-2 " >
+<h1 align="left"  style="color: black; font-size: 50px; text-align: center; margin-bottom: 5%; ">How does <a href="">
+<img src="{% static 'blog/images/gigger.png'%}" width="100px"></a> work?</h1>
+
+
+
+<div class="card-deck" style="" >
+  <div class="card" style=" border-color: transparent;" >
+
+    <div class="card-body" align="left">
+       <h1>🤝</h1>
+
+      
+      <h4 class="card-title" align="left" ><b style="color: black">Be a Gigger now!</b></h4>
+      <p style="color: black;" align="left">Sign Up and start your journey as a Gigger, there's a lot to discover within yourself, unleash your creativity and let your talent speak!</p>
+      
+    </div>
+
+  </div>
+
+
+  <div class="card" style=" border-color: transparent;">
+
+
+   
+
+
+    <div class="card-body" >
+     <h1>💼</h1>
+      <h4 class="card-title" align="left" ><b style="color: black">Post a job</b></h4>
+      <p style="color: black;" align="left">Post any job or project to get talented people work with you and get thing settled down within minutes or at your comfortable timing.</p>       
+    
+      
+    </div>
+
+  </div>
+  <div class="card" style=" border-color: transparent;">
+    
+
+
+    <div class="card-body" >
+
+      <h1>🔍</h1>
+      <h4 class="card-title" align="left" ><b style="color: black">Browse any possible job offer</b></h4>
+      <p style="color: black;" align="left">Browse infinite job offer that suit your freelance category from other user and contact them to get the job offer, settle down and get paid!.</p>   
+      
+
+     
+    </div>
+    
+  </div>
+</div>
+
+   </div>
+
+
+
+
+</div>
+
+
+
+
+
+
+<div class="container-fluid bg-3 " id="where">
+    <h1 align="center">------------</h1>
+
+  <div class="row"  >
+
+        <div class="col-sm-6" style=" ">
+              <div class="" >
+                <div class="card-body">
+
+                  <div class="media-body" >
+
+            
+
+
+                    <img src="https://images-na.ssl-images-amazon.com/images/I/611MlcxCI2L.png" width="100%">
+              
+
+                          
+                  </div>
+
+
+                 
+                </div>
+              </div>
+            </div>
+
+
+            <div class="col-sm-6 " style="margin-bottom: 5%; margin-top: 8%; ">
+              <div class="" >
+                <div class="card-body">
+
+                  <div class="media-body" >
+
+                <h1 style="color: black; font-size: 50px;" align="left" >  We utilize sentiment analysis</h1>
+                <p align="left" style=" margin-right: 15%;color: black;">Sentiment analysis (or opinion mining) is a natural language processing technique used to determine whether data is positive, negative or neutral. Sentiment analysis is often performed on textual data to help businesses monitor brand and product sentiment in customer feedback, and understand customer needs. We utilized the power of this technology to produce an insight for gig economy to gain people's idea about it using Twitter data and any other sources. </p>
+
+                <h3 style="color: black; " align="left" > <i style="color: black">✔️ Delivering people's opinion</i></h3>
+                <p align="left" style=" margin-right: 15%;color: black;">Utilizing big data to produce valuable insights. </p>
+
+                <h3 style="color: black; " align="left" > <i style="color: black">✔️ Insightful analysis</i></h3>
+                <p align="left" style=" margin-right: 15%;color: black;">Utilizing big data to produce valuable insights. </p>
+
+                <h3 style="color: black; " align="left" > <i style="color: black">✔️ Futureproof technology</i></h3>
+                <p align="left" style=" margin-right: 15%;color: black;">Utilizing big data to produce valuable insights. </p>
+                <a href="/company" class="btn btn-info">Sentiment Review.</a>                          
+                  </div>     
+                </div>
+              </div>
+            </div>
+
+  </div>  
+
+   <h1 align="center">------------</h1>
+
+  
+</div>
+
+
+<div class="container-fluid bg-3 " >
+
+
+  <div class="row">
+  <div class="col-sm-6">
+    <div class="cards">
+      <div class="card-body">
+
+         <h1 style="color: black; font-size: 50px;" align="left" >  Interactive graph on Dashboard!</h1>
+        <p class="card-text">With the power of javascript technology, we present you with beautiful graphs and statistics. There are charts and graphs you can view that will feed you with insightful information. Go have fun with our dashboard while harvesting good information.</p>
+        <i><h3>✔️ Interactive charts and graphs</h3></i>
+        <i><h3>✔️ Analyze data from multiple source</h3></i>
+
+                
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="cards">
+      <div class="card-body">
+<script>
+window.onload = function () {
+
+var dataPoints1 = [];
+var dataPoints2 = [];
+
+var chart = new CanvasJS.Chart("chartContainer", {
+  zoomEnabled: true,
+  title: {
+    text: "Interactive Chart Example"
+  },
+  axisX: {
+    title: "beautiful chart!"
+  },
+  axisY:{
+    prefix: "$"
+  }, 
+  toolTip: {
+    shared: true
+  },
+  legend: {
+    cursor:"pointer",
+    verticalAlign: "top",
+    fontSize: 22,
+    fontColor: "dimGrey",
+    itemclick : toggleDataSeries
+  },
+  data: [{ 
+    type: "line",
+    xValueType: "dateTime",
+    yValueFormatString: "$####.00",
+    xValueFormatString: "hh:mm:ss TT",
+    showInLegend: true,
+    name: "Company A",
+    dataPoints: dataPoints1
+    },
+    {       
+      type: "line",
+      xValueType: "dateTime",
+      yValueFormatString: "$####.00",
+      showInLegend: true,
+      name: "Company B" ,
+      dataPoints: dataPoints2
+  }]
+});
+
+function toggleDataSeries(e) {
+  if (typeof(e.dataSeries.visible) === "undefined" || e.dataSeries.visible) {
+    e.dataSeries.visible = false;
+  }
+  else {
+    e.dataSeries.visible = true;
+  }
+  chart.render();
+}
+
+var updateInterval = 3000;
+// initial value
+var yValue1 = 600; 
+var yValue2 = 605;
+
+var time = new Date;
+// starting at 9.30 am
+time.setHours(9);
+time.setMinutes(30);
+time.setSeconds(00);
+time.setMilliseconds(00);
+
+function updateChart(count) {
+  count = count || 1;
+  var deltaY1, deltaY2;
+  for (var i = 0; i < count; i++) {
+    time.setTime(time.getTime()+ updateInterval);
+    deltaY1 = .5 + Math.random() *(-.5-.5);
+    deltaY2 = .5 + Math.random() *(-.5-.5);
+
+  // adding random value and rounding it to two digits. 
+  yValue1 = Math.round((yValue1 + deltaY1)*100)/100;
+  yValue2 = Math.round((yValue2 + deltaY2)*100)/100;
+
+  // pushing the new values
+  dataPoints1.push({
+    x: time.getTime(),
+    y: yValue1
+  });
+  dataPoints2.push({
+    x: time.getTime(),
+    y: yValue2
+  });
+  }
+
+  // updating legend text with  updated with y Value 
+  chart.options.data[0].legendText = " Company A  $" + yValue1;
+  chart.options.data[1].legendText = " Company B  $" + yValue2; 
+  chart.render();
+}
+// generates first set of dataPoints 
+updateChart(100); 
+setInterval(function(){updateChart()}, updateInterval);
+
+}
+</script>
+</head>
+<body>
+<div id="chartContainer" style="height: 370px; width: 100%;"></div>
+<a href="/dashboard" class="btn btn-info">To Dashboard</a>
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+
+
+</div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+<h1 align="center">------------</h1>
+
+
+
+<div class="container-fluid bg-3 " >
+
+
+
+<div class="card-deck">
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8am9ifGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Post Something!</h5>
+      <p class="card-text">Unleash your unsettle job or project and get someone to work for it.</p>
+      <a href="{% url 'post-create' %}" class="btn btn-primary">Post Something!</a>
+    </div>
+  </div>
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1490127252417-7c393f993ee4?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGpvYnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Job Hunting!</h5>
+      <p class="card-text">Browse any job that suit your talent or freelance experiences.</p>
+      <a href="/job" class="btn btn-primary">Bring Me There!</a>
+    </div>
+  </div>
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1599658880436-c61792e70672?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YW5hbHl0aWN8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Analytic Board</h5>
+      <p class="card-text">We deliver interactive graph and chart for you to view insightful information.</p>
+      <a href="/dashboard" class="btn btn-primary">To Dashboard</a>
+    </div>
+  </div>
+</div>
+
+
+</div>
+
+</div>
+
+
+
+<div class="container-fluid gambar" id="where">
+
+
+
+
+</div>
+
+
+<a href="#" class="float" id="menu-share">
+<i class="fa fa-plus my-float"></i>
+</a>
+<ul >
+<li><a href="https://forms.gle/2zhHGK1dcC8ybsdX9" target="blank" class="child">
+<i class="fa fa-bug  my-float" ></i>
+</a></li>
+<li ><a href="{% url 'post-create' %}" class="child">
+<i class="fa fa-pencil my-float"></i>
+</a></li>
+</ul>
+
+
+
+<footer class="container-fluid bg4 text-center">
+ <h5>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ </h5><br>
+
+      <a href="/home"><img src="{% static 'blog/images/gigger.png'%}" width="100px"></a>
+
+  <p style="color:black;">Developed by aiman hasni for final year project, Gig Economy Portal and Sentiment Analysis Implementation</p>
+ <!-- Button trigger modal -->
+<a type="button" class="" data-toggle="modal" data-target="#exampleModalCenter" style="color: blue;">
+  About Us
+</a>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalCenterTitle">About Us</h5>
+        
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p style="text-align: left;">Gigger is a portal that focus on gig economy sector. The dashboard gathered all sentiments and reviews from famous and most frequently used job seekers websites like Glassdoor, Indeed and Jobstreet based on job oppurtunities market in Malaysia focused in freelancing. A various data source that been analyzed make this portal reliable for our freelancer/gig worker. User also can post any job/project that can give oppurtunity to fellow malaysian freelancer.
+        <br><br>
+        Developed by: Aiman Hasni Bin Zazani
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+    <main role="main" class="container" >
+      <div class="" style="" >
+        <div class="">
+          {% if messages %}
+            {% for message in messages %}
+              <div class="alert alert-{{ message.tags }}" >
+                {{ message }}
+              </div>
+            {% endfor %}
+          {% endif %}
+         {% block content %}{% endblock %}
+          
+        
+    </main>
+
+
+    
+
+  
+
+
+
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+     <script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+</body>
+</html>
+
+{% else %}
+
+
+           <div class="content-section" align="center" style="margin-top: 10%" ><h1>Sorry bud, you need to log in first : ( sincerely from, <br><img src="{% static 'blog/images/gigger.png'%}" width="150px"><br><a href="{%url 'login' %}">click here to log in... </a></h1></div>
+
+{% endif %}
