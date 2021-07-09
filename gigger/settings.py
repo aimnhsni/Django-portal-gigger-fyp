@@ -137,12 +137,12 @@ EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
-EMAIL_HOST_USER = 'hellogigger@gmail.com'
-EMAIL_HOST_PASSWORD = 'aimanhasni@tarun'
+EMAIL_HOST_USER = 'email'
+EMAIL_HOST_PASSWORD = 'password'
 
-AWS_ACCESS_KEY_ID = 'AKIAZ6KKIQE2CPZ7NAED'
-AWS_SECRET_ACCESS_KEY = 'OKBGoUnH7BvKO485cDS3s6KnwJD4bLt1NtUK1dcY'
-AWS_STORAGE_BUCKET_NAME = 'gigger-blog'
+AWS_ACCESS_KEY_ID = 'your_key_id'
+AWS_SECRET_ACCESS_KEY = 'your_secret_access_key'
+AWS_STORAGE_BUCKET_NAME = 'bucket_name'
 
 AWS_S3_FILE_OVERWRITE = False
 AWS_DEFAULT_ACL = None
